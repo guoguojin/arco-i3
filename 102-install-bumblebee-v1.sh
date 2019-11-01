@@ -3,9 +3,11 @@ set -e
 ##################################################################################################################
 # Author	:	Tan Quach
 
-# Nvidia Graphics drivers
-sudo pacman -S --noconfirm --needed nvidia nvidia-settings 
+# Bumblebee for optimus enabled laptops
+sudo pacman -S --noconfirm --needed bumblebee
+
+sudo systemctl enable bumblebee
 
 echo "################################################################"
-echo "#########   nvidia graphics software installed   ###############"
+echo "##############   bumblebee software installed   ################"
 echo "################################################################"
